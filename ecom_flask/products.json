@@ -1,0 +1,22 @@
+{
+    "products":{
+        "cactus":{
+            "id": 1,
+            "name":"Cacuts",
+            "description":"A beautiful and small prickly friend! Comes in different sizes.",
+            "price": 12.99,
+            "image-refrences":[
+                "cactus1.jpg","cactus2.jpg","cactus3.jpg"
+            ]
+        },
+        "rose":{
+            "id": 2,
+            "name":"Rose",
+            "description":"A vase of bright red roses. Perfect for any occasion.",
+            "price": 12.99,
+            "image-refrences":[
+                "rose1.jpg","rose2.jpg","rose3.jpg"
+            ]
+        }
+    }
+}
