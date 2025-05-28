@@ -2,17 +2,23 @@
 # Will be using blueprints and other modules to define how each section of the backend should react (eg: routes, api endpoints, etc...)
 from flask import Flask
 from flask_compress import Compress
-from configurations import C_Configurations
+from flask_caching import Cache
+from configurations import App_Configurations
 import os
 
-Compressor = Compress()
+AppCompressor = Compress()
+AppCache = Cache(config={
+    'CACHE_TYPE': 'SimpleCache',
+    'CACHE_DEFAULT_TIMEOUT': 3600  #in seconds
+})
 
 def init_application():
     static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static-files")
     
-    main_app = Flask(__name__,static_folder=static_dir)
-    main_app.config.from_object(C_Configurations)
+    app = Flask(__name__,static_folder=static_dir)
+    app.config.from_object(App_Configurations)
+
+    AppCache.init_app(app) # Initialize application's cache methods
+    AppCompressor.init_app(app) # Initialize application's JSON request methods
     
-    Compressor.init_app(main_app)
-    
-    return main_app
+    return app

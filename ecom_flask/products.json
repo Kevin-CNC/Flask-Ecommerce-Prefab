@@ -17,6 +17,15 @@
             "image-refrences":[
                 "rose1.jpg","rose2.jpg","rose3.jpg"
             ]
+        },
+        "tulip":{
+            "id": 3,
+            "name":"Tulip",
+            "description":"A vase of delicate tulips. How nice!",
+            "price": 10.99,
+            "image-refrences":[
+                "tulip1.jpg","tulip2.jpg","tulip3.jpg"
+            ]
         }
     }
 }
