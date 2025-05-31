@@ -12,3 +12,4 @@ class App_Configurations:
     DEBUG = False
     SECRET_KEY = os.getenv('my_secret_key')
     STRIPE_SECR_KEY = os.getenv('stripe_secret_key')
+    DATABASE_KEY = os.getenv('your_db_key')
