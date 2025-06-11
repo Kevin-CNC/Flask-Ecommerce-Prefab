@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About | Aesthetic Plants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>ABOUT</h1>
+<body class="bg-green-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <section class="container mx-auto flex justify-between items-center py-4 px-6">
+            <section class="flex items-center space-x-2">
+                <img src="https://img.icons8.com/ios-filled/50/228B22/plant-under-sun.png" alt="Logo" class="h-8 w-8">
+                <span class="text-2xl font-bold text-green-700">Aesthetic Plants</span>
+            </section>
+            <nav class="space-x-6 hidden md:block">
+                <a href="index.html" class="text-green-700 hover:text-green-900 font-medium">Home</a>
+                <a href="#shop" class="text-green-700 hover:text-green-900 font-medium">Shop</a>
+                <a href="about.html" class="text-green-700 hover:text-green-900 font-medium underline">About</a>
+                <a href="#contact" class="text-green-700 hover:text-green-900 font-medium">Contact</a>
+            </nav>
+            <button type="button" class="md:hidden text-green-700 focus:outline-none" aria-label="Open navigation menu">
+                <span class="sr-only">Open navigation menu</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </section>
+    </header>
+
+    <!-- About Hero -->
+    <section class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center">
+        <section class="md:w-1/2 mb-8 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">About Aesthetic Plants</h1>
+            <p class="text-lg text-green-700 mb-6">
+                At Aesthetic Plants, we believe that every home and workspace deserves a touch of nature. Our mission is to make it easy and enjoyable for everyone to bring greenery into their lives, no matter where they are.
+            </p>
+            <a href="#team" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">Meet Our Team</a>
+        </section>
+        <section class="md:w-1/2 flex justify-center">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="About Us" class="rounded-xl shadow-lg w-full max-w-xs md:max-w-md">
+        </section>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="bg-white py-12 px-6">
+        <section class="container mx-auto flex flex-col md:flex-row items-center">
+            <section class="md:w-1/2 mb-8 md:mb-0">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Our Story" class="rounded-lg shadow-md w-full max-w-sm mx-auto">
+            </section>
+            <section class="md:w-1/2 md:pl-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Our Story</h2>
+                <p class="text-green-700 mb-4">
+                    Founded in 2022, Aesthetic Plants started as a small family business with a passion for plants and design. We carefully select each plant for its beauty and resilience, ensuring it will thrive in your space. Our team is dedicated to providing exceptional customer service and expert advice, so you can enjoy your plants for years to come.
+                </p>
+                <ul class="list-disc pl-5 text-green-700 space-y-2">
+                    <li>Handpicked, healthy plants delivered to your door</li>
+                    <li>Eco-friendly packaging and sustainable practices</li>
+                    <li>Expert care tips and support</li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="container mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold text-green-800 mb-8 text-center">Meet Our Team</h2>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <section class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Founder" class="w-24 h-24 rounded-full mb-4 shadow">
+                <h3 class="text-xl font-semibold text-green-800 mb-1">Samantha Green</h3>
+                <p class="text-green-700 mb-2">Founder & Plant Stylist</p>
+                <p class="text-green-600 text-center text-sm">Loves succulents and helping customers find the perfect plant for their space.</p>
+            </section>
+            <section class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Operations" class="w-24 h-24 rounded-full mb-4 shadow">
+                <h3 class="text-xl font-semibold text-green-800 mb-1">Alex Moss</h3>
+                <p class="text-green-700 mb-2">Operations Manager</p>
+                <p class="text-green-600 text-center text-sm">Ensures every order is packed with care and delivered on time.</p>
+            </section>
+            <section class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Customer Support" class="w-24 h-24 rounded-full mb-4 shadow">
+                <h3 class="text-xl font-semibold text-green-800 mb-1">Priya Fern</h3>
+                <p class="text-green-700 mb-2">Customer Support</p>
+                <p class="text-green-600 text-center text-sm">Ready to answer your questions and share plant care tips.</p>
+            </section>
+        </section>
+    </section>
+
+    <!-- Values Section -->
+    <section class="bg-white py-12 px-6">
+        <section class="container mx-auto">
+            <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">Our Values</h2>
+            <section class="flex flex-col md:flex-row justify-center gap-8">
+                <section class="flex-1 bg-green-100 rounded-lg p-6 shadow mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Sustainability</h3>
+                    <p class="text-green-700">We use eco-friendly packaging and source our plants from responsible growers.</p>
+                </section>
+                <section class="flex-1 bg-green-100 rounded-lg p-6 shadow mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Quality</h3>
+                    <p class="text-green-700">Every plant is inspected and cared for before it reaches your home.</p>
+                </section>
+                <section class="flex-1 bg-green-100 rounded-lg p-6 shadow">
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Community</h3>
+                    <p class="text-green-700">We love connecting with fellow plant lovers and supporting local initiatives.</p>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-green-100 py-6 mt-12">
+        <section class="container mx-auto text-center">
+            &copy; 2025 Aesthetic Plants. All rights reserved.
+        </section>
+    </footer>
 </body>
 </html>
